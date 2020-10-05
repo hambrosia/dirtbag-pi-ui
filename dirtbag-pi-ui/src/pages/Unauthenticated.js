@@ -8,16 +8,16 @@ import React, { Fragment } from 'react';
 // How to give a frontend a unique URL for each deployment?
 // Maybe use TF to write a config file alongside the JS frontend when it's deployed to S3.
 
-function Home() {
+function Unauthenticated() {
   return (
     <Fragment>
       <header className="App-header">
         <p>
-          Welcome to DirtBag Pi.
+          Please log in to access this feature.
         </p>
         <a
           className="App-link"
-          href="/tony"
+          href="/login"
           rel="noopener noreferrer"
         >
           Log In
@@ -27,4 +27,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Unauthenticated;

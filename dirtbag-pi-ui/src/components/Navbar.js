@@ -13,15 +13,34 @@ class Navbar extends Component {
 
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a href="/" className="navbar-item">
-              Home
+            <a href="dashboard" className="navbar-item">
+              Dashboard
             </a>
-            <a href="/products" className="navbar-item">
-              Products
+            <a href="/my-sensors" className="navbar-item">
+              My Sensors
             </a>
-            <a href="/admin" className="navbar-item">
-              Admin
+            <a href="/graph-browser" className="navbar-item">
+              Graph Browser
             </a>
+          </div>
+          <div className="navbar-end">
+            <div className="navbar-item">
+              <div className="buttons">
+                {(
+                  <div>
+                    <a href="/login" className="button is-light">
+                      Log in
+                     </a>
+                  </div>
+                )}
+
+                {/* {(
+                  <a href="/" onClick={this.handleLogOut} className="button is-light">
+                    Log Out
+                  </a>
+                )} */}
+              </div>
+            </div>
           </div>
         </div>
       </nav>

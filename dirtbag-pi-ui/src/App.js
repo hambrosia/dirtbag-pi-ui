@@ -7,15 +7,22 @@ import Navbar from './components/Navbar'
 
 
 class App extends Component {
+  state = {
+    isAuthenticated: false,
+  }
+
   render () {
+    const authProps = {
+      isAuthenticated: this.state.isAuthenticated
+    }
     return (
       <div className="App">
         <Router>
           <div>
           <Navbar />
           <Switch>
-            <Route exact path="/" render ={() => <Home/>}/>
-            <Route exact path="/tony" render ={() => <Dashboard/>}/>
+            <Route exact path="/" render ={(props) => <Home {...props} auth={authProps} />}/>
+            <Route exact path="/dashboard" render ={(props) => <Dashboard {...props} auth={authProps} />}/>
           </Switch>
           </div>
         </Router>
