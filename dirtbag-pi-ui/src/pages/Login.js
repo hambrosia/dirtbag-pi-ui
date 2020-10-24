@@ -11,15 +11,6 @@ class Login extends Component {
     }
   };
 
-  clearErrorState = () => {
-    this.setState({
-      errors: {
-        cognito: null,
-        blankfield: false
-      }
-    });
-  };
-
   handleSubmit = async event => {
     event.preventDefault();
 

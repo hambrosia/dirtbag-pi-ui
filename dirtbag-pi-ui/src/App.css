@@ -43,3 +43,7 @@
   justify-content: flex-end !important;
   margin-left: auto !important;
 }
+
+.buttons {
+  margin-left: 1em;
+}
