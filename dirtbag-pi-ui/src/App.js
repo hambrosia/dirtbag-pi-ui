@@ -7,7 +7,7 @@ import Login from './pages/Login'
 import Navbar from './components/Navbar'
 import { Auth } from 'aws-amplify'
 import Footer from './components/Footer'
-
+import Register from './pages/Register'
 
 class App extends Component {
   state = {
@@ -55,6 +55,7 @@ class App extends Component {
             <Route exact path="/" render ={(props) => <Home {...props} auth={authProps} />}/>
             <Route exact path="/dashboard" render ={(props) => <Dashboard {...props} auth={authProps} />}/>
             <Route exact path="/login" render ={(props) => <Login {...props} auth={authProps} />}/>
+            <Route exact path="/register" render ={(props) => <Register {...props} auth={authProps} />}/>
           </Switch>
           <Footer />
           </div>

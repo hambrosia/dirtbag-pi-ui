@@ -7,19 +7,17 @@ class Dashboard extends Component {
     return (
       <div >
         {
-          this.props.isAuthenticated ? (
+          this.props.auth.isAuthenticated ? (
             <header className="App-header">
               <p>
-                This will be the dashboard
-            </p>
-              <a
-                className="App-link"
-                href="/tony"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Learn React
-            </a>
+                Sensors Live: 0
+              </p>
+              <p>
+                Sensors Critical: 0/0
+              </p>
+              <p>
+                Map
+              </p>
             </header>
           ) : (
               <Unauthenticated />

@@ -44,10 +44,13 @@ class Navbar extends Component {
               <div className="buttons">
                 { !this.props.auth.isAuthenticated && (
                   <div>
+                    <a href="/register" className="button is-light">
+                      Register
+                    </a>
                     <a href="/login" className="button is-light">
                       Log in
                      </a>
-                  </div>
+                </div>
                 )}
 
                 { this.props.auth.isAuthenticated && (
