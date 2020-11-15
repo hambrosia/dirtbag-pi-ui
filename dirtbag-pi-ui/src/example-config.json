@@ -1,7 +1,4 @@
 {
-    "api": { 
-      "invokeUrl": "foo-replace-me"
-    },
     "cognito": {
       "REGION": "us-west-2",
       "USER_POOL_ID": "bar-replace-me",
