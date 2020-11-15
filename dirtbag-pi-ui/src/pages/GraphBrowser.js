@@ -8,7 +8,7 @@ class GraphBrowser extends Component {
       <div >
         {
           this.props.auth.isAuthenticated ? (
-            <Iframe url=""
+            <Iframe url="http://dirtbag-example-bucket-20200815222709639700000001.s3-website.us-east-2.amazonaws.com/"
             width="90%"
             height="800px"
             id="myId"

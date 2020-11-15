@@ -6,5 +6,9 @@
       "REGION": "us-west-2",
       "USER_POOL_ID": "bar-replace-me",
       "APP_CLIENT_ID": "baz-replace-me"
+    },
+    "s3": {
+      "BUCKET_NAME": "buz-replace-me",
+      "REGION": "us-east-2"
     }
   }
