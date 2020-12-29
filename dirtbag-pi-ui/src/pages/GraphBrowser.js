@@ -3,6 +3,7 @@ import Unauthenticated from './Unauthenticated';
 import Iframe from 'react-iframe'
 
 class GraphBrowser extends Component {
+
   render() {
     return (
       <div >
@@ -19,7 +20,6 @@ class GraphBrowser extends Component {
           ) : (
               <Unauthenticated />
             )
-
         }
       </div>
     );
